@@ -1,7 +1,6 @@
 import React from "react";
 import Button from "./Button";
 
-
 const ButtonList = () => {
   return (
     <div className="flex">
@@ -17,6 +16,8 @@ const ButtonList = () => {
       <Button name="Cricket" />
       <Button name="Cooking" />
       <Button name="Cricket" />
+      <Button name="Cricket" />
+      <Button name="Cooking" />
     </div>
   );
 };
