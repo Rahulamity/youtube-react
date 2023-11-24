@@ -59,17 +59,36 @@ const commentsData = [
   {
     name: "Rahul Thakur",
     text: "Lorem ipsum dolor sit amet, consectetur adip",
-    replies: [],
+    replies: [
+      {
+        name: "Rahul Thakur",
+        text: "Lorem ipsum dolor sit amet, consectetur adip",
+        replies: []
+        ,
+      },
+    ],
   },
   {
     name: "Rahul Thakur",
     text: "Lorem ipsum dolor sit amet, consectetur adip",
-    replies: [],
+    replies: [
+      {
+        name: "Rahul Thakur",
+        text: "Lorem ipsum dolor sit amet, consectetur adip",
+        replies: [],
+      },
+    ],
   },
   {
     name: "Rahul Thakur",
     text: "Lorem ipsum dolor sit amet, consectetur adip",
-    replies: [],
+    replies: [
+      {
+        name: "Rahul Thakur",
+        text: "Lorem ipsum dolor sit amet, consectetur adip",
+        replies: [],
+      },
+    ],
   },
 ];
 
@@ -97,6 +116,7 @@ const CommentsList = ({ comments }) => {
       <Comment data={comment} />
       <div className="pl-5 border border-l-black ml-5">
         <CommentsList comments={comment.replies} />
+        {/* <CommentsList comments={comment.replies} /> */}
       </div>
     </div>
   ));
@@ -104,7 +124,7 @@ const CommentsList = ({ comments }) => {
 
 const CommentsContainer = () => {
   return (
-    <div className="m-5 p-2">
+    <div className="m-5 p-5">
       <h1 className="text-2xl font-bold">Comments: </h1>
       <CommentsList comments={commentsData} />
     </div>
